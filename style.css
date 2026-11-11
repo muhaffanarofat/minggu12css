@@ -12,11 +12,12 @@ body {
     line-height: 1.6;
 }
 
+/* Header */
 header {
     background-color: #234e70;
     color: white;
     text-align: center;
-    padding: 30px 15px;
+    padding: 30px 20px;
 }
 
 header h1 {
@@ -28,10 +29,11 @@ header p {
     margin-bottom: 0;
 }
 
+/* Navigasi */
 nav {
     background-color: #16324f;
-    padding: 15px;
     text-align: center;
+    padding: 15px;
 }
 
 nav a {
@@ -39,158 +41,63 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
-    display: inline-block;
 }
 
-nav a:hover,
-nav a.active {
-    color: #ffd166;
+nav a:hover {
+    color: #f4c95d;
 }
 
-
+/* Konten Utama */
 main {
     max-width: 1000px;
     margin: 30px auto;
-    padding: 25px;
+    padding: 20px;
+}
+
+/* Welcome */
+.welcome {
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+/* Koleksi Buku */
+.books {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
 }
 
 h2 {
     color: #234e70;
-    border-bottom: 2px solid #ffd166;
-    padding-bottom: 8px;
-    margin-top: 20px;
 }
 
-
-.hero {
+.book-card {
     background-color: #e8f1f8;
-    padding: 40px 25px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.hero h2 {
-    border: none;
-    font-size: 28px;
-}
-
-.tombol {
-    display: inline-block;
-    background-color: #234e70;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: 15px;
-}
-
-.tombol:hover {
-    background-color: #16324f;
-}
-
-
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.card {
-    background-color: #e8f1f8;
-    padding: 20px;
+    padding: 15px;
+    margin: 15px 0;
     border-left: 5px solid #234e70;
-    border-radius: 7px;
-    margin-top: 15px;
+    border-radius: 5px;
 }
 
-.card h3 {
-    color: #234e70;
-    margin-top: 0;
+.book-card h3 {
+    color: #16324f;
 }
 
-.buku {
-    transition: 0.3s;
-}
-
-.buku:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 12px rgba(0,0,0,0.12);
-}
-
-.ikon {
-    font-size: 40px;
-    text-align: center;
-}
-
-
-.highlight {
-    background-color: #e8f1f8;
+/* Informasi */
+.information {
+    background-color: white;
     padding: 25px;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 30px;
+    border-radius: 8px;
+    margin-bottom: 25px;
 }
 
-
-form {
-    margin-top: 20px;
-}
-
-label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin-top: 7px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-}
-
-button {
-    background-color: #234e70;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 15px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #16324f;
-}
-
-
+/* Footer */
 footer {
     background-color: #16324f;
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 30px;
-}
-
-
-@media (max-width: 600px) {
-    nav a {
-        margin: 5px;
-        font-size: 14px;
-    }
-
-    header h1 {
-        font-size: 24px;
-    }
-
-    main {
-        margin: 15px;
-        padding: 15px;
-    }
 }
